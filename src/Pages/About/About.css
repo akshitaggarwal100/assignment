@@ -1,0 +1,19 @@
+.about {
+    padding: 0 1rem;
+    font-family: 'Lato';
+}
+
+.about h1 {
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: #364F6B;
+}
+
+.about p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #43DDE6;
+}

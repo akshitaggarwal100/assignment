@@ -1,0 +1,176 @@
+.home {
+    font-family: 'Lato', sans-serif;
+}
+
+.topSection {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topText {
+    width: 45%;
+}
+
+.topTextHeading {
+    margin-bottom: 2rem;
+    font-size: 90px;
+    line-height: 110px;
+    font-weight: 400;
+    color: #364F6B;
+}
+
+.topTextPara {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.topImg {
+    width: 45%;
+}
+
+.topButton {
+    background-color: #43DDE6;
+    border: none;
+    cursor: pointer;
+    width: 11rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: background-color 400ms;
+}
+
+.topButton:hover {
+    background-color: #3cbec5;
+}
+
+@media (max-width: 1440px) {
+    .topTextHeading {
+        font-size: 72px;
+        line-height: 82px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .topText {
+        width: 50%;
+    }
+
+    .topImg {
+        width: 40%;
+    }
+
+    .topTextHeading {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 1.5rem;
+    }
+
+    .topTextPara {
+        margin-bottom: 1.5rem;
+        line-height: 1.4rem;
+    }
+
+    .topButton {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 1155px) {
+    .topImg {
+        width: 50%;
+    }
+
+    .topText {
+        width: 40%;
+    }
+
+    .topTextHeading {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .topTextPara {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .topImg {
+        width: 55%;
+    }
+
+    .topTextHeading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .topTextPara {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .topSection {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topImg {
+        width: 100%;
+        margin: auto;
+    }
+
+    .topText {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .topTextHeading {
+        font-size: 72px;
+        line-height: 80px;
+        margin-bottom: 2rem;
+    }
+
+    .topTextPara {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 685px) {
+    .topTextHeading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topTextHeading {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 530px) {
+    .topTextHeading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 455px) {
+    .topTextHeading {
+        font-size: 29px;
+        line-height: 38px;
+    }
+}

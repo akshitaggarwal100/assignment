@@ -1,0 +1,120 @@
+.workCard {
+    width: 32%;
+    height: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.workImg {
+    background: rgba(48, 48, 48, 0.5);
+    width: 100%;
+    height: 75%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.cardBottom {
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workDetails {
+    width: 70%;
+}
+
+.workDetails h2 {
+    margin-bottom: 1rem;
+}
+
+.workButton {
+    width: 15%;
+}
+
+@media (max-width: 1240px) {
+    .workImg {
+        height: 70%;
+    }
+
+    .cardBottom {
+        height: 30%;
+    }
+
+    .workDetails {
+        width: 75%;
+    }
+
+    .workDetails h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 965px) {
+    .workImg {
+        height: 65%;
+    }
+
+    .cardBottom {
+        height: 35%;
+        padding: 1rem;
+    }
+
+    .workDetails h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .workDetails p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .workDetails {
+        width: 80%;
+    }
+}
+
+@media (max-width: 760px) {
+    .workCard {
+        width: 90%;
+        height: 32%;
+    }
+
+    .workImg {
+        height: 75%;
+    }
+
+    .cardBottom {
+        height: 25%;
+        padding: 1rem 2rem;
+    }
+
+    .workDetails h2 {
+        font-size: 1.7rem;
+    }
+
+    .workDetails p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .workCard {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .workDetails h2 {
+        font-size: 1.2rem;
+    }
+
+    .workDetails p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,107 @@
+.trustedComp {
+    color: white;
+    border-bottom: 2px solid #D9D9D9;
+    padding: 0 2rem 3rem;
+}
+
+.compHeading {
+    width: 40rem;
+    margin: 0 auto 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato';
+}
+
+.compHeading h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.line {
+    height: 3px;
+    width: 10rem;
+    background-color: #D9D9D9;
+}
+
+.companiesSwiper {
+    width: 100%;
+}
+
+.compLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compLogo img {
+    width: 50%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;
+}
+
+@media (max-width: 990px) {
+    .compHeading {
+        width: 33rem;
+    }
+
+    .line {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .compHeading {
+        width: 28rem;
+    }
+
+    .line {
+        width: 6rem;
+    }
+
+    .compLogo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .compHeading {
+        width: 25rem;
+    }
+
+    .compHeading h3 {
+        font-size: 1.2rem;
+    }
+
+    .line {
+        width: 5rem;
+    }
+
+    .compLogo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .compHeading {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .trustedComp {
+        padding: 0 1rem 3rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .compHeading h3 {
+        font-size: 1.1rem;
+    }
+}
