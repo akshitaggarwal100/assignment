@@ -6,7 +6,7 @@ import './Contact.css'
 export default function Contact() {
   function sendEmail(e) {
     e.preventDefault()
-    emailjs.sendForm('service_y77viee', 'template_2g9gy38', e.target, 'iDB00d6W9OmpGFqM3')
+    emailjs.sendForm('service_y77viee', 'template_2g9gy38', e.target, 'Y_u_i4ZiG9i7-N8uS')
       .then((result) => {
         alert('Message Sent Successfully!');
       }, (error) => {
@@ -29,19 +29,25 @@ export default function Contact() {
 
           <div className="formInputs">
             <label className="input">
-              Your Name
-              <input className="inputBox name" type="text" name="name" />
+              Sender Name
+              <input className="inputBox name" type="text" name="from_name" />
+            </label>
+
+            <label className="input">
+              Receiver Name
+              <input className="inputBox name" type="text" name="to_name" />
             </label>
 
             <div className="secondRow">
               <label className="input email">
-                Your Email
-                <input className="inputBox" type="email" name="email" id="" />
+                From Email
+                <input className="inputBox" type="email" name="from_email" id="" />
               </label>
 
               <label className="input number">
-                Your Phone Number
-                <input className="inputBox" type="number" name="number" min={10000000} max={9999999999} />
+                To Email
+                {/* <input className="inputBox" type="email" name="to_email" min={10000000} max={9999999999} /> */}
+                <input className="inputBox" type="email" name="to_email" min={10000000} max={9999999999} />
               </label>
             </div>
 
