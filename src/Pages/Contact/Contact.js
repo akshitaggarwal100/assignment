@@ -10,7 +10,7 @@ export default function Contact() {
       .then((result) => {
         alert('Message Sent Successfully!');
       }, (error) => {
-        console.log('AW Snap!');
+        console.log('Message could not be sent');
       })
   }
 
@@ -21,35 +21,31 @@ export default function Contact() {
       <h1 className="contactHeading">Contact with us</h1>
 
       <main className="contact">
-        <form className="formBox" action="developers@webalar.in" method="post" onSubmit={sendEmail}>
+        <form className="formBox" onSubmit={sendEmail}>
           <div className="formHeader">
             <h2 className="formHeading">Tell us about your project</h2>
             <p className="formPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum lobortis mi vulputate potenti orci.</p>
           </div>
 
           <div className="formInputs">
-            <label className="input">
-              Sender Name
-              <input className="inputBox name" type="text" name="from_name" />
-            </label>
-
-            <label className="input">
-              Receiver Name
-              <input className="inputBox name" type="text" name="to_name" />
-            </label>
-
             <div className="secondRow">
-              <label className="input email">
-                From Email
-                <input className="inputBox" type="email" name="from_email" id="" />
+
+              <label className="input">
+                Sender Name
+                <input className="inputBox name" type="text" name="from_name" />
               </label>
 
-              <label className="input number">
-                To Email
-                {/* <input className="inputBox" type="email" name="to_email" min={10000000} max={9999999999} /> */}
-                <input className="inputBox" type="email" name="to_email" min={10000000} max={9999999999} />
+              <label className="input">
+                Receiver Name
+                <input className="inputBox name" type="text" name="to_name" />
               </label>
+
             </div>
+
+            <label className="input number">
+              To Email
+              <input className="inputBox" type="email" name="to_email" min={10000000} max={9999999999} />
+            </label>
 
             <label className="input message">
               Your Message

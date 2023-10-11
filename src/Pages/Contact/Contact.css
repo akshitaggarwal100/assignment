@@ -80,8 +80,7 @@
     font-weight: 200;
 }
 
-.email,
-.number {
+.email {
     width: 48%;
 }
 
@@ -118,8 +117,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .secondRow {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
 }
 
 .message {
@@ -203,6 +203,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .formInputs {
-        height:79%;
+        height: 79%;
     }
 }
